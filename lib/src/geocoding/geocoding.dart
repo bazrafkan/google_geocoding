@@ -2,6 +2,7 @@ import 'package:google_geocoding/src/geocoding/geocoding_parameters.dart';
 import 'package:google_geocoding/src/geocoding/geocoding_response.dart';
 import 'package:google_geocoding/src/models/bounds.dart';
 import 'package:google_geocoding/src/models/component.dart';
+import 'package:google_geocoding/src/models/lat_lon.dart';
 import 'package:google_geocoding/src/utils/network_utility.dart';
 
 class Geocoding {
@@ -26,6 +27,28 @@ class Geocoding {
       bounds,
       language,
       region,
+    );
+    var uri = Uri.https(_authority, _unencodedPath, queryParameters);
+    var response = await NetworkUtility.fetchUrl(uri);
+    if (response != null) {
+      return GeocodingResponse.parseGeocodingResponse(response);
+    }
+    return null;
+  }
+
+  Future<GeocodingResponse> getReverse(
+    LatLon latlng, {
+    String language,
+    List<String> resultType,
+    List<String> locationType,
+  }) async {
+    assert(latlng != null);
+    var queryParameters = GeocodingParameters.createReverseParameters(
+      apiKEY,
+      latlng,
+      language,
+      resultType,
+      locationType,
     );
     var uri = Uri.https(_authority, _unencodedPath, queryParameters);
     var response = await NetworkUtility.fetchUrl(uri);
