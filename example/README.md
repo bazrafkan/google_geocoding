@@ -1,16 +1,19 @@
-# example
+# Example
 
-A new Flutter project.
+An example for **google_geocoding** package.
+
+## Preview
+
+- Home page - Geocoding
+
+  ![Home page - Geocoding](https://github.com/bazrafkan/google_geocoding/blob/master/example/images/home_geocoding.png)
+
+- Home page - Reverse Geocoding
+
+  ![Home page - Reverse Geocoding](https://github.com/bazrafkan/google_geocoding/blob/master/example/images/home_reverse_geocoding.png)
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Creat **_.env_** file in root of this example
+- Add your key for Google place API in this file (ex: API_KEY=XXXXXXXXXXX)
+- Get packages from the command line: **_flutter pub get_**
