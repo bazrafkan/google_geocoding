@@ -1,3 +1,7 @@
+## [0.1.0] - 2020-04-05
+
+- Fix bug for double variables and add example
+
 ## [0.0.1] - 2020-04-04
 
 - The initial release supports all google geocoding api requests
