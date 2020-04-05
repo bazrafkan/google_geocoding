@@ -6,11 +6,11 @@ An example for **google_geocoding** package.
 
 - Home page - Geocoding
 
-  ![Home page - Geocoding](https://github.com/bazrafkan/google_geocoding/blob/master/example/images/home_geocoding.png)
+  ![Home page - Geocoding](images/home_geocoding.png)
 
 - Home page - Reverse Geocoding
 
-  ![Home page - Reverse Geocoding](https://github.com/bazrafkan/google_geocoding/blob/master/example/images/home_reverse_geocoding.png)
+  ![Home page - Reverse Geocoding](images/home_reverse_geocoding.png)
 
 ## Getting Started
 
