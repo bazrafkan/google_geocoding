@@ -1,3 +1,9 @@
+# CHANGELOG
+
+## [0.1.2] - 2020-04-08
+
+- Update description for methods
+
 ## [0.1.1] - 2020-04-05
 
 - Update README file
