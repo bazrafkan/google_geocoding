@@ -15,7 +15,9 @@ export 'package:google_geocoding/src/models/plus_code.dart';
 export 'package:google_geocoding/src/models/southwest.dart';
 export 'package:google_geocoding/src/models/viewport.dart';
 
+/// The Geocoding API is a service that provides geocoding and reverse geocoding of addresses.
 class GoogleGeocoding {
+  /// [apiKEY] Your application's API key. This key identifies your application.
   final String apiKEY;
   Geocoding geocoding;
 
