@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## [0.1.3] - 2020-04-09
+
+- Update example
+
 ## [0.1.2] - 2020-04-08
 
 - Update description for methods
