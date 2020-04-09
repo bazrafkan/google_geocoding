@@ -88,6 +88,13 @@ packages:
       relative: true
     source: path
     version: "0.1.2"
+  google_place:
+    dependency: "direct main"
+    description:
+      name: google_place
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.3.0"
   http:
     dependency: transitive
     description:

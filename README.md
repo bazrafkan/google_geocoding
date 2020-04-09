@@ -28,7 +28,10 @@ To use this plugin, add **google_geocoding** as a [dependency in your pubspec.ya
 - [Example](https://github.com/bazrafkan/google_geocoding/blob/master/example)
 
   ![Home page - Geocoding](example/images/home_geocoding.png)
+
   ![Home page - Reverse Geocoding](example/images/home_reverse_geocoding.png)
+
+  ![Details page](example/images/details_page.png)
 
 ## Sample Usage
 

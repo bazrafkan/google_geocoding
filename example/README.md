@@ -4,13 +4,19 @@ An example for **google_geocoding** package.
 
 ## Preview
 
-- Home page - Geocoding
+- Home page
 
-  ![Home page - Geocoding](images/home_geocoding.png)
+  - Geocoding
 
-- Home page - Reverse Geocoding
+    ![Home page - Geocoding](images/home_geocoding.png)
 
-  ![Home page - Reverse Geocoding](images/home_reverse_geocoding.png)
+  - Reverse Geocoding
+
+    ![Home page - Reverse Geocoding](images/home_reverse_geocoding.png)
+
+- Details page
+
+  ![Details page](images/details_page.png)
 
 ## Getting Started
 
