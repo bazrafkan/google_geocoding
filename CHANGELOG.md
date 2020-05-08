@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [0.1.4] - 2020-05-08
+
+- Update pubspec file in example
+- Update README file in example
+
 ## [0.1.3] - 2020-04-09
 
 - Update example
