@@ -12,7 +12,7 @@ dependencies:
   flutter_dotenv: ^2.1.0
   google_place: ^0.3.0
   google_geocoding:
-    path: ../../google_geocoding/
+    path: ../
 
 dev_dependencies:
   flutter_test:
