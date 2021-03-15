@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## [0.2.0] - 2021-03-15
+
+- Add null-safety
+
 ## [0.1.4] - 2020-05-08
 
 - Update pubspec file in example
