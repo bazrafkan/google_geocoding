@@ -1,8 +1,11 @@
 class Northeast {
-  final double lat;
-  final double lng;
+  final double? lat;
+  final double? lng;
 
-  Northeast({this.lat, this.lng});
+  Northeast({
+    this.lat,
+    this.lng,
+  });
 
   factory Northeast.fromJson(Map<String, dynamic> json) {
     return Northeast(

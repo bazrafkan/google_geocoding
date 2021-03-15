@@ -2,10 +2,13 @@ import 'package:google_geocoding/src/models/northeast.dart';
 import 'package:google_geocoding/src/models/southwest.dart';
 
 class Bounds {
-  final Northeast northeast;
-  final Southwest southwest;
+  final Northeast? northeast;
+  final Southwest? southwest;
 
-  Bounds({this.northeast, this.southwest});
+  Bounds({
+    this.northeast,
+    this.southwest,
+  });
 
   factory Bounds.fromJson(Map<String, dynamic> json) {
     return Bounds(

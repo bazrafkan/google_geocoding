@@ -19,10 +19,9 @@ export 'package:google_geocoding/src/models/viewport.dart';
 class GoogleGeocoding {
   /// [apiKEY] Your application's API key. This key identifies your application.
   final String apiKEY;
-  Geocoding geocoding;
+  late Geocoding geocoding;
 
   GoogleGeocoding(this.apiKEY) {
-    assert(apiKEY != null);
     this.geocoding = Geocoding(apiKEY);
   }
 }

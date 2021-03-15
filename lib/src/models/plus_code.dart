@@ -1,8 +1,11 @@
 class PlusCode {
-  final String globalCode;
-  final String compoundCode;
+  final String? globalCode;
+  final String? compoundCode;
 
-  PlusCode({this.globalCode, this.compoundCode});
+  PlusCode({
+    this.globalCode,
+    this.compoundCode,
+  });
 
   factory PlusCode.fromJson(Map<String, dynamic> json) {
     return PlusCode(

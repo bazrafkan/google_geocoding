@@ -3,8 +3,8 @@ import 'dart:convert';
 import 'package:google_geocoding/src/geocoding/geocoding_result.dart';
 
 class GeocodingResponse {
-  final String status;
-  final List<GeocodingResult> results;
+  final String? status;
+  final List<GeocodingResult>? results;
 
   GeocodingResponse({this.status, this.results});
 

@@ -1,7 +1,7 @@
 class AddressComponent {
-  final String longName;
-  final String shortName;
-  final List<String> types;
+  final String? longName;
+  final String? shortName;
+  final List<String>? types;
 
   AddressComponent({
     this.longName,

@@ -5,11 +5,11 @@ import 'package:google_geocoding/src/models/lat_lon.dart';
 class GeocodingParameters {
   static Map<String, String> createGeocodingParameters(
     String apiKEY,
-    String address,
-    List<Component> components,
-    Bounds bounds,
-    String language,
-    String region,
+    String? address,
+    List<Component>? components,
+    Bounds? bounds,
+    String? language,
+    String? region,
   ) {
     Map<String, String> queryParameters = {
       'key': apiKEY,
@@ -38,10 +38,16 @@ class GeocodingParameters {
       queryParameters.addAll(item);
     }
 
-    if (bounds != null) {
+    if (bounds != null &&
+        bounds.southwest != null &&
+        bounds.southwest!.lat != null &&
+        bounds.southwest!.lng != null &&
+        bounds.northeast != null &&
+        bounds.northeast!.lat != null &&
+        bounds.northeast!.lng != null) {
       var item = {
         'bounds':
-            '${bounds.southwest.lat},${bounds.southwest.lng}|${bounds.northeast.lat},${bounds.northeast.lng}',
+            '${bounds.southwest!.lat},${bounds.southwest!.lng}|${bounds.northeast!.lat},${bounds.northeast!.lng}',
       };
       queryParameters.addAll(item);
     }
@@ -66,9 +72,9 @@ class GeocodingParameters {
   static Map<String, String> createReverseParameters(
     String apiKEY,
     LatLon latlng,
-    String language,
-    List<String> resultType,
-    List<String> locationType,
+    String? language,
+    List<String>? resultType,
+    List<String>? locationType,
   ) {
     Map<String, String> queryParameters = {
       'key': apiKEY,

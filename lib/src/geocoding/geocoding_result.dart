@@ -3,14 +3,14 @@ import 'package:google_geocoding/src/models/geometry.dart';
 import 'package:google_geocoding/src/models/plus_code.dart';
 
 class GeocodingResult {
-  final List<AddressComponent> addressComponents;
-  final String formattedAddress;
-  final List<String> postcodeLocalities;
-  final Geometry geometry;
-  final String placeId;
-  final List<String> types;
-  final PlusCode plusCode;
-  final bool partialMatch;
+  final List<AddressComponent>? addressComponents;
+  final String? formattedAddress;
+  final List<String>? postcodeLocalities;
+  final Geometry? geometry;
+  final String? placeId;
+  final List<String>? types;
+  final PlusCode? plusCode;
+  final bool? partialMatch;
 
   GeocodingResult({
     this.addressComponents,

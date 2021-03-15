@@ -40,14 +40,13 @@ class Geocoding {
   ///
   /// [region] Optional parameters - The region code, specified as a ccTLD ("top-level domain") two-character value. This parameter
   /// will only influence, not fully restrict, results from the geocoder.
-  Future<GeocodingResponse> get(
+  Future<GeocodingResponse?> get(
     String address,
     List<Component> components, {
-    Bounds bounds,
-    String language,
-    String region,
+    Bounds? bounds,
+    String? language,
+    String? region,
   }) async {
-    assert(address != null || components != null);
     var queryParameters = GeocodingParameters.createGeocodingParameters(
       apiKEY,
       address,
@@ -91,13 +90,12 @@ class Geocoding {
   /// specified location type(s). Rather, the location_type acts as a post-search filter: the API fetches all results for the
   /// specified latlng, then discards those results that do not match the specified location type(s). Note: This parameter is
   /// available only for requests that include an API key or a client ID.
-  Future<GeocodingResponse> getReverse(
+  Future<GeocodingResponse?> getReverse(
     LatLon latlng, {
-    String language,
-    List<String> resultType,
-    List<String> locationType,
+    String? language,
+    List<String>? resultType,
+    List<String>? locationType,
   }) async {
-    assert(latlng != null);
     var queryParameters = GeocodingParameters.createReverseParameters(
       apiKEY,
       latlng,
