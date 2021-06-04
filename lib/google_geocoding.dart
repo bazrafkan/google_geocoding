@@ -21,7 +21,13 @@ class GoogleGeocoding {
   final String apiKEY;
   late Geocoding geocoding;
 
-  GoogleGeocoding(this.apiKEY) {
-    this.geocoding = Geocoding(apiKEY);
+  /// Optional headers to pass on each request
+  final Map<String, String> headers;
+
+  GoogleGeocoding(
+    this.apiKEY, {
+    this.headers = const {},
+  }) {
+    this.geocoding = Geocoding(apiKEY, headers);
   }
 }
