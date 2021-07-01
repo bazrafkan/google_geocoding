@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## [0.2.1] - 2021-07-01
+- Added ability to pass custom headers in requests.
+
 ## [0.2.0] - 2021-03-15
 
 - Add null-safety
