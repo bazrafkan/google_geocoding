@@ -9,8 +9,8 @@ class PlusCode {
 
   factory PlusCode.fromJson(Map<String, dynamic> json) {
     return PlusCode(
-      globalCode: json['global_code'],
-      compoundCode: json['compound_code'],
+      globalCode: json['global_code'] as String,
+      compoundCode: json['compound_code'] as String,
     );
   }
 }
