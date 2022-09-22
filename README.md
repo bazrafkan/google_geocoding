@@ -39,12 +39,12 @@ To use this plugin, add **google_geocoding** as a [dependency in your pubspec.ya
 
 ```dart
 var googleGeocoding = GoogleGeocoding("Your-Key");
-var risult = await googleGeocoding.geocoding.get("1600 Amphitheatre",null);
+var result = await googleGeocoding.geocoding.get("1600 Amphitheatre",null);
 ```
 
 - Reverse geocoding
 
 ```dart
 var googleGeocoding = GoogleGeocoding("Your-Key");
-var risult = await googleGeocoding.geocoding.getReverse(LatLon(40.714224,-73.961452));
+var result = await googleGeocoding.geocoding.getReverse(LatLon(40.714224,-73.961452));
 ```
