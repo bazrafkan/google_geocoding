@@ -2,6 +2,7 @@ library google_geocoding;
 
 import 'package:google_geocoding/src/geocoding/geocoding.dart';
 
+export 'package:google_geocoding/src/geocoding/geocoding.dart';
 export 'package:google_geocoding/src/geocoding/geocoding_response.dart';
 export 'package:google_geocoding/src/geocoding/geocoding_result.dart';
 export 'package:google_geocoding/src/models/address_component.dart';
