@@ -9,8 +9,9 @@ class Geocoding {
   final _authority = 'maps.googleapis.com';
   final _unencodedPath = 'maps/api/geocode/json';
   final String apiKEY;
+  final Map<String, String> headers;
 
-  Geocoding(this.apiKEY);
+  Geocoding(this.apiKEY, this.headers);
 
   /// Geocoding is the process of converting addresses (like a street address) into geographic coordinates (like latitude and longitude),
   /// which you can use to place markers on a map, or position the map.
@@ -56,7 +57,7 @@ class Geocoding {
       region,
     );
     var uri = Uri.https(_authority, _unencodedPath, queryParameters);
-    var response = await NetworkUtility.fetchUrl(uri);
+    var response = await NetworkUtility.fetchUrl(uri, headers: headers);
     if (response != null) {
       return GeocodingResponse.parseGeocodingResponse(response);
     }
@@ -104,7 +105,7 @@ class Geocoding {
       locationType,
     );
     var uri = Uri.https(_authority, _unencodedPath, queryParameters);
-    var response = await NetworkUtility.fetchUrl(uri);
+    var response = await NetworkUtility.fetchUrl(uri, headers: headers);
     if (response != null) {
       return GeocodingResponse.parseGeocodingResponse(response);
     }

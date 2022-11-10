@@ -1,6 +1,6 @@
 name: google_geocoding
 description: A new Flutter package for handle google geocoding api that geocoding and reverse geocoding requests are available
-version: 0.2.0
+version: 0.2.1
 homepage: https://github.com/bazrafkan/google_geocoding
 
 environment:
