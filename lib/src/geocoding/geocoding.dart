@@ -110,4 +110,33 @@ class Geocoding {
     }
     return null;
   }
+
+  /// Retrieving an address for a Place ID
+  /// Required parameters:
+  ///
+  /// [placeId] — The place ID of the place for which you wish to obtain the human-readable address. The place ID is a unique
+  /// identifier that can be used with other Google APIs. For example, you can use the placeID returned by the Roads API to
+  /// get the address for a snapped point. For more information about place IDs, see the place ID overview.
+  ///
+  /// The optional parameters are the same as those for [Geocoding].
+  Future<GeocodingResponse?> getByPlaceId(
+      String placeId, {
+        String? language,
+        List<String>? resultType,
+        List<String>? locationType,
+      }) async {
+    var queryParameters = GeocodingParameters.createGeocodingPlaceIdParameters(
+      apiKEY,
+      placeId,
+      language,
+      resultType,
+      locationType,
+    );
+    var uri = Uri.https(_authority, _unencodedPath, queryParameters);
+    var response = await NetworkUtility.fetchUrl(uri);
+    if (response != null) {
+      return GeocodingResponse.parseGeocodingResponse(response);
+    }
+    return null;
+  }
 }
