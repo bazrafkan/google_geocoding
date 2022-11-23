@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 /// A pair of latitude and longitude coordinates, stored as degrees.
 class LatLon {
   /// Creates a geographical location specified in degrees [latitude] and
@@ -31,5 +29,5 @@ class LatLon {
   }
 
   @override
-  int get hashCode => hashValues(latitude, longitude);
+  int get hashCode => latitude.hashCode ^ longitude.hashCode;
 }
